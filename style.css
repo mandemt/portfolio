@@ -15,8 +15,9 @@ h1{
 	height:0em;
 	color:white;
 	margin:0 auto;
-
 }
+
+
 header{
 	position:fixed;
 	top:0;
@@ -25,8 +26,9 @@ header{
 	flex-direction:column;
 	max-height:10em;
 	background-color:#0883B7;
-	/*box-shadow: 0px 5px 5px black;*/
+
 }
+
 header button{
 	border:none;
 	background-color:aqua;
@@ -39,6 +41,29 @@ header img{
 	height:4em;
 	
 }
+header form{
+	display:flex;
+	flex-direction:row;
+	position:absolute;
+	right:2em;
+	top:1em;
+
+}
+header form  input:nth-of-type(1){ /*Dit is de zoekBALK*/
+	margin:0;
+	background-color:lightgray;
+	border:none;
+	font-size:1em;
+	text-indent:1em;
+}
+header form input:nth-of-type(2){ /* dit is de zoekKNOP*/
+	background-color:black;
+	color:white;
+	width:5em;
+	height:2em;
+	margin:0
+
+}
 
 nav ul{
 	justify-content:center;
@@ -48,12 +73,15 @@ nav ul{
 	margin:3em  auto;
 }
 nav ul li{
-	
+	color:white;
 	transition:.5s;
 	text-align:center;
 	width:50%;
 	height:2em;
 	background-color:#72ACD6;
+}
+nav ul li a p{
+	color:black;
 }
 nav ul li h2{
 	font-weight:normal;
@@ -68,10 +96,10 @@ nav ul li p{
 
 }
 nav ul li:hover{
-	color:white;
+	color:black;
 	height:6em;
 	width:100%;
-	background-color:#5EADAC;
+	background-color:#78DEDC;
 	transition:.5s;
 	font-size:1em;
 	box-shadow:0px 5px 5px black;
@@ -80,39 +108,46 @@ nav ul li:hover{
 article{
 	margin:0 auto;
 	padding:1em;
-	/*background-color:aqua;*/
 	width:50em;
+	line-height:2em;
 	margin-top:13em;
-	display:grid;
-	grid-template-columns:10em auto;
-	grid-template-rows: 5em 10em 10em;
-	grid-column-gap:1em;
+	
 
 }
 article h3{
+
 	font-size:1.2em;
-grid-column:2;
-background-color:white;
-grid-row:1;
-/*font-weight:normal;*/
+	margin-bottom:1em;
+	background-color:white;
+
 
 }
 article img:first-of-type{
-	grid-column:1;
+	float:right;
+	margin-right:3em;
 	width:10em;
+	float:right;
+
+}
+article img:nth-of-type(2){
+	width:40em;
 }
 article p{
 	font-size:1.2em;
-	grid-column:2;
-	grid-row:1;
-	margin:1em 0;
 
 }
+
 article ul{
-	grid-column:2;
-	grid-row:2;
-	margin-left:1em;
+	line-height:1.5em;
+	margin:0 0 4em 1em;
 	list-style-type:disc;
+	margin-bottom:4em;
+	
+}
+#onleesbaar1{
+	display:inline-block;
+	background-color:aqua;
+	color:white;
 }
 aside{
 	display:flex;

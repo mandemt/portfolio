@@ -92,3 +92,6 @@ menuBlok3.addEventListener('mouseleave',li3d);
 
 menuBlok4.addEventListener('mouseover', li4o);
 menuBlok4.addEventListener('mouseleave',li4d);
+
+
+var foto

@@ -19,7 +19,6 @@ h1{
 
 
 header{
-	transition:.5s;
 	position:fixed;
 	top:0;
 	width:100%;
@@ -29,24 +28,18 @@ header{
 	background-color:#0883B7;
 
 }
-.headeropen{
-	max-height:45em;
-	transition:.5s;
-}
-.ulopen{
-	margin-top:38em;
-	transition:.5s;
-}
 
-header img:first-of-type{
+header button{
+	border:none;
+	background-color:aqua;
+}
+header button:focus{
+	border:none;
+}
+header img{
 	margin:1em 0 0 0;
 	height:4em;
 	
-}
-header img:nth-of-type(2){
-	position:absolute;
-	margin-top:12em;
-	width:100%;
 }
 header form{
 	display:flex;
@@ -56,7 +49,6 @@ header form{
 	top:1em;
 
 }
-
 header form  input:nth-of-type(1){ /*Dit is de zoekBALK*/
 	margin:0;
 	background-color:lightgray;
@@ -74,7 +66,6 @@ header form input:nth-of-type(2){ /* dit is de zoekKNOP*/
 }
 
 nav ul{
-	transition:.5s;
 	justify-content:center;
 	list-style-type:none;
 	display:flex;
@@ -89,22 +80,18 @@ nav ul li{
 	height:2em;
 	background-color:#72ACD6;
 }
-
+nav ul li a p{
+	color:black;
+}
 nav ul li h2{
 	font-weight:normal;
 }
-nav ul li a{
-	text-decoration:none;
-}
-nav ul li a p{
+nav ul li p{
 	margin: .5em 1em 0 1em;
 	visibility: hidden;
 	text-align:left;
-	text-decoration:none;
-	color:black;
 }
 .menu{
-	text-decoration:none;
 	visibility: visible;
 
 }

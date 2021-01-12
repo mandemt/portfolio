@@ -1,19 +1,19 @@
 console.log('yo')
 var menuBlok1 = document.querySelector('header nav ul li:nth-of-type(1)');
-var menuTekst1 = document.querySelector('nav ul li p:first-of-type');
-var menuTekst2 = document.querySelector('nav ul li p:nth-of-type(2)');
+var menuTekst1 = document.querySelector('nav ul li a:first-of-type p');
+var menuTekst2 = document.querySelector('nav ul li a:nth-of-type(2) p');
 
 var menuBlok2 = document.querySelector('header nav ul li:nth-of-type(2)');
-var menuTekst3 = document.querySelector('nav ul li:nth-of-type(2) p:first-of-type');
-var menuTekst4 = document.querySelector('nav ul li:nth-of-type(2) p:nth-of-type(2)');
+var menuTekst3 = document.querySelector('nav ul li:nth-of-type(2) a:first-of-type p');
+var menuTekst4 = document.querySelector('nav ul li:nth-of-type(2) a:nth-of-type(2)  p');
 
 var menuBlok3 = document.querySelector('header nav ul li:nth-of-type(3)');
-var menuTekst5 = document.querySelector('nav ul li:nth-of-type(3) p:nth-of-type(1)');
-var menuTekst6 = document.querySelector('nav ul li:nth-of-type(3) p:nth-of-type(2)');
+var menuTekst5 = document.querySelector('nav ul li:nth-of-type(3) a:first-of-type p');
+var menuTekst6 = document.querySelector('nav ul li:nth-of-type(3) a:nth-of-type(2) p');
 
 var menuBlok4 = document.querySelector('header nav ul li:nth-of-type(4)');
-var menuTekst7 = document.querySelector('nav ul li:nth-of-type(4) p:nth-of-type(1)');
-var menuTekst8 = document.querySelector('nav ul li:nth-of-type(4) p:nth-of-type(2)');
+var menuTekst7 = document.querySelector('nav ul li:nth-of-type(4) a:first-of-type p');
+var menuTekst8 = document.querySelector('nav ul li:nth-of-type(4) a:nth-of-type(2)  p');
 var menuTekst1 = document.querySelector('p');
 
 
@@ -94,4 +94,20 @@ menuBlok4.addEventListener('mouseover', li4o);
 menuBlok4.addEventListener('mouseleave',li4d);
 
 
-var foto
+var huisLogo = document.querySelector('header img:first-of-type ');
+var header = document.querySelector('header')
+var ul = document.querySelector('header nav ul')
+
+function menuOpenen( ){
+	header.classList.toggle('headeropen')
+	ul.classList.toggle('ulopen')
+}
+
+huisLogo.addEventListener('click', menuOpenen);
+
+
+
+
+
+
+

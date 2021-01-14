@@ -237,25 +237,74 @@ header form{
 }
 
 header ul{
-	text-align:center;
 	list-style-type:none;
-	width:100%;
-	
-	background-color:#72ACD6;
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
+	display:grid;
+	height:100vh;
+	background-color:#0883B7;
+	padding-top:4em;
+	padding:4em 1em;
+	/*padding-right:2em;*/
+	grid-template-rows:10em 10em ;
+	grid-template-columns:10em 10em;
+	grid-row-gap:3em;
+	grid-column-gap:3em;
+	max-width:100%
+	margin:0 auto;
+	justify-content:center;
+
 }
 header ul li{
-	width:50%;
+	list-style-type:none;
+	/*margin:-1em;*/
 	background-color:aqua;
-	height:5em;
+	transition:.5s;
+	-webkit-transform: scaleX(1);
+
+	}
+
+
+header ul li h2{
+	text-align:center;
+	margin-top: 2.5em;
+
 }
-img{
-	visibility:hidden;
-	width:0;
+header ul li a{
+	transition:0s;
+	text-decoration:none;
+	color:black;
+	position:relative;
+	text-align:center;
+	visibility: hidden;
+	display:block;
+transform: scale(-1, 1);	
+}
+.kliklijst{
+	-webkit-transform: scaleX(-1);
+	display:flex;
+	flex-direction:column;
+}
+.klikh2{
+	position: absolute;
+	bottom:0;
+	transition:0s;
+	 visibility:hidden;
+	 width:0;
+}
+.klika{
+	margin:2em;
+	/*position: absolute;*/
+	transition:0s;
+	visibility: visible;
+	top:0;
+
+
+
 }
 
+img{
+	visibility: hidden;
+	width:0;
+}
 
 
 

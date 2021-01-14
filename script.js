@@ -108,6 +108,15 @@ huisLogo.addEventListener('click', menuOpenen);
 
 
 
+var lijstObject = document.querySelector('header nav ul li:first-of-type')
+var h2 = document.querySelector('header nav ul li h2:first-of-type');
+var a = document.querySelector('header nav ul li p')
+function aanklikken() {
+	lijstObject.classList.toggle('kliklijst')
+	h2.classList.toggle('klikh2');
+	a.classList.toggle('klika')
+}
 
+lijstObject.addEventListener('click',aanklikken)
 
 

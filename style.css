@@ -11,13 +11,6 @@ body{
 
 
 @media(min-width:600px){
-h1{
-	height:0em;
-	color:white;
-	margin:0 auto;
-}
-
-
 header{
 	transition:.5s;
 	position:fixed;
@@ -29,10 +22,12 @@ header{
 	background-color:#0883B7;
 
 }
+
 .headeropen{
 	max-height:45em;
 	transition:.5s;
 }
+
 .ulopen{
 	margin-top:38em;
 	transition:.5s;
@@ -43,11 +38,13 @@ header img:first-of-type{
 	height:4em;
 	
 }
-header img:nth-of-type(2){
-	position:absolute;
-	margin-top:12em;
-	width:100%;
+
+h1{
+	height:0em;
+	color:white;
+	margin:0 auto;
 }
+
 header form{
 	display:flex;
 	flex-direction:row;
@@ -64,6 +61,7 @@ header form  input:nth-of-type(1){ /*Dit is de zoekBALK*/
 	font-size:1em;
 	text-indent:1em;
 }
+
 header form input:nth-of-type(2){ /* dit is de zoekKNOP*/
 	background-color:black;
 	color:white;
@@ -71,6 +69,12 @@ header form input:nth-of-type(2){ /* dit is de zoekKNOP*/
 	height:2em;
 	margin:0
 
+}
+
+header img:nth-of-type(2){
+	position:absolute;
+	margin-top:12em;
+	width:100%;
 }
 
 nav ul{
@@ -93,21 +97,26 @@ nav ul li{
 nav ul li h2{
 	font-weight:normal;
 }
+
 nav ul li a{
 	text-decoration:none;
 }
+
 nav ul li a p{
 	margin: .5em 1em 0 1em;
 	visibility: hidden;
 	text-align:left;
 	text-decoration:none;
 	color:black;
+	
 }
+
 .menu{
 	text-decoration:none;
 	visibility: visible;
 
 }
+
 nav ul li:hover{
 	color:black;
 	height:6em;
@@ -116,6 +125,12 @@ nav ul li:hover{
 	transition:.5s;
 	font-size:1em;
 	box-shadow:0px 5px 5px black;
+}
+nav ul li:nth-of-type(3):hover{
+	height:8em;
+}
+nav ul li:nth-of-type(4):hover{
+	height:7em;
 }
 
 article{
@@ -127,14 +142,7 @@ article{
 	
 
 }
-article h3{
 
-	font-size:1.2em;
-	margin-bottom:1em;
-	background-color:white;
-
-
-}
 article img:first-of-type{
 	float:right;
 	margin-right:3em;
@@ -142,9 +150,14 @@ article img:first-of-type{
 	float:right;
 
 }
-article img:nth-of-type(2){
-	width:40em;
+
+article h3{
+
+	font-size:1.2em;
+	margin-bottom:1em;
+	background-color:white;
 }
+
 article p{
 	font-size:1.2em;
 
@@ -157,11 +170,17 @@ article ul{
 	margin-bottom:4em;
 	
 }
+
 #onleesbaar1{
 	display:inline-block;
 	background-color:aqua;
 	color:white;
 }
+
+article img:nth-of-type(2){
+	width:40em;
+}
+
 aside{
 	display:flex;
 	flex-direction:column;
@@ -173,6 +192,7 @@ aside{
 	width:60px;
 	background-color:white;
 }
+
 aside a{
 	margin-left:.5em;
 	
@@ -183,33 +203,64 @@ aside img{
 	height:50px;
 	object-fit:fill;
 }
-}
 
 
 }
 
 @media(max-width:600px){
-	header{
-		display:flex;
-		width:100%;
-		position:fixed;
-		top:0;
-		max-height:2em;
-		background-color:aqua;
-	}
-	header button{
-		background-color:aqua;
-		border:none;
-	}
-	header img{
-		width:2em;
-		height:2em;
-		object-fit:fill;
-	}
-	header h1{
-		margin:0 auto;
-	}
-	nav ul{
-		display:none;
-	}
+*{
+	transition:.5s;
 }
+
+header{
+	width:100%;
+	background-color:#0883B7;
+	position:fixed;
+	display:flex;
+	flex-direction:column;
+	height:4.5em;
+}
+header img:first-of-type{
+	visibility:visible;
+	width:3em;
+	margin:.5em;
+	position:fixed;
+	z-index:1000;
+}
+header h1{
+	color:white;
+	margin:0 auto;
+}
+header form{
+	visibility:hidden;
+	transition:0s;
+}
+
+header ul{
+	text-align:center;
+	list-style-type:none;
+	width:100%;
+	
+	background-color:#72ACD6;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+header ul li{
+	width:50%;
+	background-color:aqua;
+	height:5em;
+}
+img{
+	visibility:hidden;
+	width:0;
+}
+
+
+
+
+
+
+
+}
+	
